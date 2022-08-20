@@ -1,0 +1,111 @@
+.hero{
+        margin: auto;
+        background-color: #C4C4C4;;
+        background-image: linear-gradient(
+            to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4) ),url("../img/hero/mobile-img.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+    
+    }
+@media screen and (min-device-pixel-ratio: 2),
+ screen and (-webkit-min-device-pixel-ratio: 2),
+ screen and (min-resolution: 192dpi),
+ screen and (min-resolution: 2dppx) {
+    .hero{
+        background-image: url("../img/hero/mobile-img@2x.jpg")
+        
+    }
+}
+
+@media screen and (min-width: 489px) {
+    .hero{
+        background-image: url("../img/hero/tablet-img.jpg")
+    }
+    @media (min-resolution: 2dppx) {
+        .overlay{
+            background-image: url("../img/hero/tablet-img@2x.jpg")
+            
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    .hero{
+        background-image: url("../img/hero/desktop-img.jpg")
+    }
+    @media (min-resolution: 2dppx) {
+        .hero{
+            background-image: url("../img/hero/desktop-img@2x.jpg")
+            
+        }
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .hero{
+    padding: 200px 0px;
+    text-align: center;
+    }
+     .hero__title{
+            width: 693px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            font-weight: 900;
+                font-size: 44px;
+                line-height: 1.4;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+                color: var(--white-color);
+        }
+     
+ }
+
+@media screen and (max-width: 1199px) {
+    .hero{
+        padding: 118px 0px;
+        align-items: center;
+        text-align: center;
+               
+    }
+    .hero__title{
+        width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.61;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--white-color);
+    }
+    
+}
+
+.hero__title{
+    margin-bottom: 30px;
+}            
+.hero__button{
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color:var(--white-color);
+    background: var(--brand-color);
+    padding: 10px 32px;
+    cursor: pointer; 
+    transition: background-color var(--transition-color), color var(--transition-color);
+   
+}
+.hero__button:hover,
+.hero__button:focus,
+.hero__button:active{
+    background: #085fa7;
+
+}
+

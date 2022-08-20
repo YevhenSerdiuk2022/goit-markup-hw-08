@@ -1,0 +1,21 @@
+@media screen and (max-width: 1199px) {
+    .section{
+        padding: 60px 0;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .section{
+        padding: 94px 0;
+    }
+}
+
+.section--no-padding-top {
+    padding-top: 0px;
+}
+
+.section--other-baground {
+    text-align: center;
+    background-color: var(--background-fon-button);
+}

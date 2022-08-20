@@ -1,0 +1,60 @@
+.button-menu{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    background: var(--background-fon-button);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 6px 22px;
+   transition: color var(--transition-color);
+   
+}
+@media screen and (max-width: 767px){
+        .exmaple__filter{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+        .exmaple-filter__item:not(:last-child){
+            margin: 0px 8px 15px 0px;
+        }
+       
+
+    }
+    
+@media screen and (min-width: 768px) {
+     .exmaple__filter{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        .exmaple-filter__item:not(:last-child){
+            margin: 0px 8px 0px 0px;
+        }
+}
+// .exmaple__filter{
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     margin-bottom: 50px;
+// }
+// .exmaple-filter__item:not(:last-child){
+//     margin: 0px 8px 15px 0px;
+// }
+
+.contact-form-submit:hover, .contact-form-submit:focus,.contact-form-submit:focus{
+    background:#085fa7;
+   
+}
+
+ .button-menu:hover,.button-menu:focus{
+    background: var(--brand-color);
+    color: var(--white-color);
+   
+ }
+ .button-menu--color-active{
+    background-color: var(--brand-color);
+    color:var(--white-color);
+}

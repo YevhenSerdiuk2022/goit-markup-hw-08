@@ -1,0 +1,197 @@
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   @media screen and (min-width:767px) {
+    width: 528px;
+    height: 581px;
+   }
+    width: 450px;
+    height: 609px;
+    padding:40px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+.modal__close-bnt{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color:transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 6px;
+}
+.modal-title{
+  @media screen and (min-width:768px){
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.15;
+  }
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    @media screen and (max-width:767px){
+       max-width: 370px;
+    } 
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    color: #212121;
+}
+
+  .contact-form__input-modal:focus, .contact-form__message:focus {
+    outline: none;
+    border-color: var(--brand-color);
+  }
+  .contact-form__input-modal:focus + .contact-form__icon {
+    fill: var(--brand-color);
+  }
+.contact-form__element-desc {
+    display: block;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-bottom: 4px;
+  }
+  .contact-form__message::placeholder {
+    
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+
+}
+  .contact-form__wrapper {
+    position: relative;
+    display: block;
+  }
+  
+.contact-form__input-modal{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    transition: border-color var(--transition-color);
+  }
+  .contact-form__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+     display: block;
+      
+    transition: background-color var(--transition-color);
+  }
+  .contact-form__message {
+    @media screen and (min-width:768px){
+      height: 100px;
+    }
+    width: 100%;
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    transition: border-color var(--transition-color);
+  }
+  .contact-form__checkbox-desc {
+    @media screen and (min-width: 768px){
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      padding-left: 38px;
+    }
+    margin-top: 14px;
+    display: block;
+    align-items:center;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    padding-left: 22px;
+  }
+  .contact-form__checkbox-desc::before {
+    @media screen and (min-width: 768px) {
+      top: 5px;
+      left: 12px;
+    }
+    display:inline-block;
+    position: absolute;
+    top: -1px;
+    left: 0;
+
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--fonts-title-color);
+    border-radius: 2px;
+    content: '';
+    margin-right: 8px;
+    margin-left: 0px;
+  }
+  .checbox-position{
+    position: relative;
+  }
+  .icon-check{
+    @media screen and (min-width:768px) {
+      top: 5px;
+        left: 13px;
+    }
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .contact-form__checkbox:checked + .contact-form__checkbox-desc::before {
+    background-color: var(--brand-color);
+    transition: background-color var(--transition-color);
+    border: transparent;
+  }
+  .contact-form__checkbox:focus + .contact-form__checkbox-desc::before {
+    outline: 2px solid rgba(0, 0, 255, 0.5);
+    transition: background-color var(--transition-color);
+  }
+  .contact-form__checkbox-desc-color{
+    color: var(--brand-color);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+ 
+  .contact-form-submit{
+    @media screen and (min-width:767px){
+      margin-left: 125px;
+    }
+   
+    margin-left: 80px; 
+    min-width: 200px;
+   
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color:var(--white-color);
+    background: var(--brand-color);
+    padding: 10px 32px;
+    cursor: pointer; 
+    transition: background-color var(--transition-color), color var(--transition-color);
+   
+  }
