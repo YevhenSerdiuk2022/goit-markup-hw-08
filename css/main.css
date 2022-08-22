@@ -294,6 +294,14 @@ img {
     line-height: 1.71;
     padding-left: 38px;
   }
+  .contact-form__checkbox-desc::before {
+    top: 5px;
+    left: 13px;
+  }
+  .icon-check {
+    top: 5px;
+    left: 13px;
+  }
 }
 .modal__close-bnt {
   position: absolute;
