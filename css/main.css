@@ -140,8 +140,8 @@ img {
 
 @media screen and (max-width: 479px) {
   .modal {
-    min-width: 380px;
-    min-height: 609px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -756,7 +756,16 @@ img {
   transform: scaleX(1);
 }
 
-.sait-nav__link--active {
+.sait-nav__link--active::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  bottom: -32px;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  transform: scaleX(1);
   color: var(--brand-color);
 }
 
@@ -801,6 +810,22 @@ img {
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../img/hero/mobile-img@2x.jpg");
+  }
+}
+@media screen and (max-width: 479px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/tablet-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 479px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/tablet-img@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1373,9 +1398,9 @@ img {
 }
 
 .exmaple__link {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 .exmaple__link:hover, .exmaple__link:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1387,7 +1412,7 @@ img {
   border-left: solid 1px #EEEEEE;
   border-right: solid 1px #EEEEEE;
   border-bottom: solid 1px #EEEEEE;
-  flex-grow: 1;
+  flex: 1 1 auto;
 }
 
 .exmaple__item-title {
@@ -1409,7 +1434,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 101%;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms ease;
