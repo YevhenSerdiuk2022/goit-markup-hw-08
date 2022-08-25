@@ -1,4 +1,5 @@
 @media screen and (min-width: 768px) {
+    
     .footer__wrapper{
         display: flex;
         flex-wrap: wrap;
@@ -6,14 +7,7 @@
         align-items: baseline;
 
      }
-     .footer__address{
-        @media screen and (max-width: 1199px) {
-            // margin-left: 76px;
-            // margin-right: 165px;
-        }
-       
-       
-     }
+    
      .footer__title{
         
     
@@ -26,7 +20,13 @@
      }
 
 }
-
+          .footer__content {
+              @media screen and (max-width: 1199px) {
+                  text-align: center;
+              }
+    
+    
+          }
 .footer__logo{
     display: block;
     margin-bottom: 20px;
