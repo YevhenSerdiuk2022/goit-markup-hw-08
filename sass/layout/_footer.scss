@@ -8,10 +8,7 @@
 
      }
     
-     .footer__title{
-        
-    
-     }
+     
      .footer__sign-in{
         @media screen and (max-width: 1199px) {
             // margin-left: 166px;
@@ -53,9 +50,9 @@
 .footer{
     background-color: var(--fon-color);
 }
-.footer__address{
+.footer__content{
     @media screen and (max-width: 767px) {
-         margin-bottom: 60px; 
+        margin-bottom: 60px;
     }
     @media screen and (max-width: 1199px) {
     text-align: center;
@@ -67,12 +64,14 @@
     padding: 60px 0;
 }
 @media screen and (min-width: 1200px) {
-    .footer__address{
+    .footer__content{
         margin-right: 70px;
+    }
+    .footer__address{
         width: 231px;
      } .footer__item:not(:last-child){
-     width: 230px;
-     margin-bottom: 9px;
+       width: 230px;
+       margin-bottom: 9px;
  }
          
 }
